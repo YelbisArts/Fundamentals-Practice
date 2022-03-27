@@ -11,6 +11,16 @@ var stringToNumber = function(str){
 
 console.log(stringToNumber)
 
+// Solution 2
+
+var stringToNumber = function(str){
+  return parseInt(str)
+}
+
+console.log(stringToNumber)
+
+// Notes: In the future, I do not need to use a variable (mayo), and can simply have 'return parseInt(str);' for the same result.
+
 // Test Code
 
 describe( "stringToNumber", function(){
