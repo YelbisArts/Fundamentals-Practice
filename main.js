@@ -11,7 +11,8 @@ var stringToNumber = function(str){
 
 console.log(stringToNumber)
 
-// Sample Tests
+// Test Code
+
 describe( "stringToNumber", function(){
   it( "should work for the examples" , function(){
     Test.assertEquals(stringToNumber("1234"),1234)
