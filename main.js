@@ -34,6 +34,7 @@ describe( "stringToNumber", function(){
 
 
 
+
 // Prompt 2
 // 8kyu: Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
 // Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
@@ -64,5 +65,35 @@ describe("Basic tests", () => {
     assert.strictEqual(DNAtoRNA("GACCGCCGCC"), "GACCGCCGCC")
     });
   })
+  });
+});
+
+
+
+// Prompt 3
+// 8kyu: This code does not execute properly. Try to figure out why.
+// function multiply(a, b){
+//   a * b
+// }
+
+
+// Solution 1
+
+function multiply(a, b){
+  return a * b
+}
+
+
+// Notes: Simplest one I found so far. Good reminder on using return.
+
+// Test Code
+const assert = require("chai").assert;
+
+describe("Multiply", () => {
+  it("fixed tests", () => {
+    assert.strictEqual(multiply(1,1), 1);
+    assert.strictEqual(multiply(2,1), 2);
+    assert.strictEqual(multiply(2,2), 4);
+    assert.strictEqual(multiply(3,5), 15);   
   });
 });
