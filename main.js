@@ -97,3 +97,50 @@ describe("Multiply", () => {
     assert.strictEqual(multiply(3,5), 15);   
   });
 });
+
+
+
+// Prompt 4
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+// function even_or_odd(number) {
+  
+// }
+
+
+// Solution 1
+
+function even_or_odd(number) {
+  if(number % 2 === 0){
+    return ("Even");
+  }else{
+    return ("Odd")
+  }
+}
+
+console.log(even_or_odd(5))
+
+
+// Notes: Practice on conditionals and utilizing arguments. Took a few minutes figuring out how to call the function, but then I realized I was missing a closing curly brace. Whoops.
+
+// Test Code
+const chai = require('chai');
+const assert = chai.assert;
+
+describe("Sample tests",() => {
+  
+  it("2 is even", () => {
+    assert.strictEqual(even_or_odd(2), "Even");
+  });
+  it("7 is odd", () => {
+    assert.strictEqual(even_or_odd(7), "Odd");
+  });
+  it("-42 is even", () => {
+    assert.strictEqual(even_or_odd(-42), "Even");
+  });
+  it("-7 is odd", () => {
+    assert.strictEqual(even_or_odd(-7), "Odd");
+  });
+  it("0 is even", () => {
+    assert.strictEqual(even_or_odd(0), "Even");
+  });
+});
