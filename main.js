@@ -163,10 +163,47 @@ function opposite(number) {
 
 
 // Notes: Initiall had "opposite(10)" after the closing braces.
+
 // Test Code
 
 describe("Tests", () => {
   it("test", () => {
 Test.assertEquals(opposite(1), -1,)
+  });
+});
+
+
+
+// Prompt 6
+// We need a function that can transform a number into a string.
+
+function numberToString(num) {
+  // Return a string of the number here!
+}
+
+
+// Solution 1
+
+function numberToString(num) {
+  return num.toString()
+}
+
+// Solution 2
+
+function numberToString(num) {
+  let convert = num.toString()
+  return convert
+}
+
+
+
+// Notes: Had some trouble upfront using the function within the return/assignment. Eventually plugged the parameter itself and that fixed it.
+
+// Test Code
+
+const assert = require('chai').assert;
+describe("Tests", () => {
+  it("test", () => {
+    assert.strictEqual(numberToString(67), '67');
   });
 });
