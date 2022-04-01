@@ -144,3 +144,29 @@ describe("Sample tests",() => {
     assert.strictEqual(even_or_odd(0), "Even");
   });
 });
+
+
+
+// Prompt 5
+// Very simple, given an integer or a floating-point number, find its opposite.
+
+ function opposite(number) {
+  //your code here
+}
+
+
+// Solution 1
+
+function opposite(number) {
+  return(number * -1)
+}
+
+
+// Notes: Initiall had "opposite(10)" after the closing braces.
+// Test Code
+
+describe("Tests", () => {
+  it("test", () => {
+Test.assertEquals(opposite(1), -1,)
+  });
+});
